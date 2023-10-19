@@ -1,0 +1,476 @@
+body {
+    font-family: Helvetica;
+    height: 100vh;
+
+}
+
+li {
+    padding: 0.2rem;
+    list-style: none;
+   
+}
+
+
+.liste-accueil li a {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+form  {
+      padding: 0.2rem;
+}
+.film-poster-details {
+     background-color: rgb(255, 255, 255);
+      width: 300px;
+     height: auto;
+     padding: 1rem;
+}
+
+.film-poster {
+    width: 150px;
+    height: auto;
+     
+}
+
+.film-card:hover img {
+    filter: invert(30%) grayscale(1) contrast(1);
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transform: scale(1.1); /* Effet de zoom */
+    box-shadow: 0 6px 10px rgba(18, 18, 19, 0.5); /* Ombrage subtil */
+}
+
+
+.film-titre {
+    font-weight: 500;
+    color: rgb(53, 62, 71);
+    
+   
+    font-size: 35px;
+ 
+ 
+}
+
+.recherche{
+ padding: 1rem;
+   
+}
+
+header {
+    margin-left: 1rem;
+    margin-right: 5rem;
+}
+
+
+.film-grid {
+    width: 60%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+    gap: 20px;
+    margin: 2rem 2rem 5rem 15rem;
+    flex-wrap: nowrap;
+   
+
+}
+
+.film-card img {
+    width: 100%;
+    gap:10px;
+    height: auto;
+   margin: 0 ;
+  
+}
+
+.left-arrow {
+width: 2%;
+    height: 2%;
+    margin-left: 3rem;
+}
+
+.film-info {
+display: flex;
+flex-grow: 2;
+gap: 2rem;
+width: 100%;
+padding-left: 2rem;
+
+}
+
+.film-text {
+    width: 40%;
+}
+
+
+footer {
+padding: 0.5rem;
+ bottom: 0;
+    width: 100%;
+   
+    text-align: center;
+    font-size: smaller;
+ 
+}
+
+main {
+    display: flex;
+background-color: rgba(245, 245, 245, 0.8);
+    overflow: hidden;
+   justify-content: center;
+   gap: 2rem;
+
+   
+
+}
+
+
+#film-details {
+    display: flex;
+    flex-direction: row;
+
+margin-top: 6rem;
+padding: 1rem;
+gap: 1rem;
+    justify-content:center;
+    align-items: flex-start;
+    align-content: center;
+   
+ 
+  height: 80%;
+    width: 80vw;
+    padding-bottom: 7rem;
+
+    background-color: rgba(245, 245, 245, 0.8);
+
+
+
+
+}
+
+.back-to-list {
+    width: 20px;
+    height: 20px;
+    padding: 1.5rem;
+   
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+nav a:visited {
+ 
+    color: rgb(53, 62, 71);
+ text-decoration: none;
+}
+
+/* Style pour le menu principal */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Style pour les sous-menus */
+ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+ul li:hover > ul {
+    display: block;
+}
+
+ul ul li {
+    display: block;
+    width: 150px; /* Largeur du sous-menu */
+    padding: 10px;
+}
+
+ul ul li a {
+    color: #555;
+    font-weight: normal;
+}
+
+ul ul li:hover {
+    background-color: #f5f5f5;
+}
+
+label {
+ display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+margin-bottom: 1.5rem;
+
+    border: 1px solid #ccc;
+    
+  
+}
+input[type="submit"] {
+    background-color: #515254;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+
+    cursor: pointer;
+}
+
+select {
+
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  margin-bottom: 1.5rem;
+}
+.success-message, .error-message {
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+}
+
+.success-message {
+    background-color: #D4EDDA;
+    color: #155724;
+}
+
+.error-message {
+    background-color: #F8D7DA;
+    color: #e80000;
+}
+
+.form-container {
+display: block;
+   width: 50%;
+     margin: 1rem;
+ 
+ 
+}
+
+.realisateurs {
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+    color: #515254;
+}
+
+.realisateurs:active {
+    color: orangered;
+}
+.realisateurs:hover{
+    color: goldenrod;
+}
+a:active {
+color: orangered;
+
+}
+.aside-genres li {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+
+.aside-genres li {
+    margin: 0.5rem 0;
+}
+
+a:hover {
+    color: goldenrod;
+
+}
+
+#plus-icon {
+    width: 50px;
+    height: 50px;
+}
+
+
+.plus-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.plus-icon :hover{
+    transform: scale(1.1); /* Effet de zoom */
+      transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+thead {
+    background-color: #F5F5F5;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+tr:hover {
+    background-color: #F5F5F5;
+}
+
+.realisateurs {
+    text-decoration: none;
+    color: #515254;
+}
+
+.realisateurs:hover {
+    color: goldenrod;
+}
+
+td a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #727272;
+}
+
+#logo {
+    text-decoration: none;
+}
+
+#logo:visited {
+   color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type="submit"]:hover {
+    background-color: orangered;
+    color: white;
+
+}
+
+.aside-title {
+ 
+   margin-left: -20%;
+
+}
+
+
+.aside-genres {
+ 
+   margin-left: -30%;
+
+}
+
+.playlist-container {
+ display: block;
+}
+
+.search-results {
+    margin-top: 20px;
+}
+#film-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+.film-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    text-align: center;
+}
+.film-card img {
+    max-width: 100%;
+    height: auto;
+}
+.film-card img:hover {
+ cursor: pointer;
+}
+
+.search-results {
+    margin-top: 20px;
+}
+#film-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+.film-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    text-align: center;
+}
+.film-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajouter ce code à ton fichier styles.css */
+.bouton{
+    background-color: #515254;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+
+    cursor: pointer;
+    font-size: 12px;
+ 
+     margin-bottom: 10px;
+}
+
+button[type="submit"]:hover, input[type="submit"]:hover {
+    background-color: orangered;
+}
+
+.container {
+    display: flex;
+}
+
+.bouton-modifier {
+     background-color: #515254;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+ margin-top:0.2rem;
+     margin-bottom: 10px;
+}
+
+.bouton-modifier:hover{
+    background-color: orangered;
+    color: white;
+}
+
+.afficher-liste {
+    margin: 1rem;
+}
+
