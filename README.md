@@ -3,10 +3,10 @@
 Alexandre Grégoire e2395236
 
 sur webdev:
-BD: videodrome
-username: 
-pw:
-url:
+BD: e2395236
+username: e2395236
+pw: 
+url: e2395236.webdev.cmaisonneuve.qc.ca/videodrome
 
 ## Informations sur le cours
 
